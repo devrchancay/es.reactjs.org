@@ -87,7 +87,7 @@ function getGreeting(user) {
 }
 ```
 
-### Especificando atributos con jsx {#specifying-attributes-with-jsx}
+### Especificando atributos con JSX {#specifying-attributes-with-jsx}
 
 Puedes utilizar comillas para especificar strings literales como atributos:
 
@@ -103,9 +103,9 @@ const element = <img src={user.avatarUrl}></img>;
 
 No pongas comillas rodeando llaves cuando insertes una expresión JavaScript en un atributo. Debes utilizar comillas (para los valores de los strings) o llaves (para las expresiones), pero no ambas en el mismo atributo.
 
->**Warning:**
+>**Advertencia:**
 >
->Dado que JSX está más cercano a JavaScript que a HTML, React DOM usa la convención de nomenclatura `camelCase` en vez de nombres de atributos HTML.
+>Dado que JSX es más cercano a JavaScript que a HTML, React DOM usa la convención de nomenclatura `camelCase` en vez de nombres de atributos HTML.
 >
 >Por ejemplo, `class` se vuelve [`className`](https://developer.mozilla.org/es/docs/Web/API/Element/className) en JSX, y `tabindex` se vuelve [`tabIndex`](https://developer.mozilla.org/es/docs/Web/API/HTMLElement/tabIndex).
 
@@ -128,7 +128,7 @@ const element = (
 );
 ```
 
-### JSX Previene Ataques de Inyección {#jsx-prevents-injection-attacks}
+### JSX previene ataques de inyección {#jsx-prevents-injection-attacks}
 
 Es seguro insertar datos ingresados por el usuario en JSX:
 
@@ -140,11 +140,11 @@ const element = <h1>{title}</h1>;
 
 Por defecto, React DOM [escapa](http://stackoverflow.com/questions/7381974/which-characters-need-to-be-escaped-on-html) cualquier valor insertado en JSX antes de renderizarlo. De este modo, se asegura de que nunca se pueda insertar nada que no esté explícitamente escrito en tú aplicación. Todo es convertido en un string antes de ser renderizado. Esto ayuda a prevenir vulnerabilidades [XSS (cross-site-scripting)](https://es.wikipedia.org/wiki/Cross-site_scripting).
 
-### JSX Representa Objetos {#jsx-represents-objects}
+### JSX representa objetos {#jsx-represents-objects}
 
-Babel compila JSX bajo llamados a `React.createElement()`.
+Babel compila JSX a llamadas de `React.createElement()`.
 
-Estos dos ejemplos son identicos:
+Estos dos ejemplos son idénticos:
 
 ```js
 const element = (

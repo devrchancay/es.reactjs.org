@@ -136,9 +136,9 @@ En la práctica, encontrar una clave no suele ser difícil. Es posible que el el
 <li key={item.id}>{item.name}</li>
 ```
 
-Cuando ese no sea el caso, puede agregar una nueva propiedad de ID a su modelo o marcar algunas partes del contenido para generar una clave. La clave solo tiene que ser única entre sus hermanos, no globalmente única.
+Cuando ese no sea el caso, puedes agregar una nueva propiedad de ID a su modelo o marcar algunas partes del contenido para generar una clave. La clave solo tiene que ser única entre sus hermanos, no globalmente única.
 
-Como último recurso, puede pasar el índice de un elemento en la matriz como una clave. Esto puede funcionar bien si los ítems nunca se reordenan, pero los reordenamientos serán lentos.
+Como último recurso, puedes pasar el índice de un elemento en la matriz como una clave. Esto puede funcionar bien si los ítems nunca se reordenan, pero los reordenamientos serán lentos.
 
 Reorganizar también puede causar problemas de estado del componente cuando los índices se utilizan como claves. Si la clave es un índice, mover un elemento lo cambia. Como resultado, el estado el componente para cosas como entradas no controladas pueden mezclarse y actualizarse de manera inesperada.
 
@@ -146,7 +146,7 @@ Reorganizar también puede causar problemas de estado del componente cuando los 
 
 ## Compensaciones {#tradeoffs}
 
-Es importante recordar que el algoritmo de reconciliación es un detalle de la implementación. React podría volver a renderizar toda la aplicación en cada acción; El resultado final sería el mismo. Para que quede claro, volver a renderizar en este contexto significa llamar a `render` para todos los componentes, no significa que React los desmonte y los vuelva a montar. Solo aplicará las diferencias siguiendo las reglas establecidad en las secciones anteriores. 
+Es importante recordar que el algoritmo de reconciliación es un detalle de la implementación. React podría volver a renderizar toda la aplicación en cada acción; El resultado final sería el mismo. Para que quede claro, volver a renderizar en este contexto significa llamar a `render` para todos los componentes, no significa que React los desmonte y los vuelva a montar. Solo aplicará las diferencias siguiendo las reglas establecidas en las secciones anteriores. 
 
 Regularmente refinamos las heurísticas para que los casos de uso común sean más rápidos. En la implementación actual, puedes expresar el hecho de que un subárbol se ha movido entre sus hermanos, pero no puede decir que se haya movido a otro lugar. El algoritmo reenviará ese subárbol completo.
 

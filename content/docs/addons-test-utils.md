@@ -10,7 +10,7 @@ category: Reference
 
 ```javascript
 import ReactTestUtils from 'react-dom/test-utils'; // ES6
-var ReactTestUtils = require('react-dom/test-utils'); // ES5 with npm
+var ReactTestUtils = require('react-dom/test-utils'); // ES5 con npm
 ```
 
 ## Introducción {#overview}
@@ -122,7 +122,7 @@ it('can render and update a counter', () => {
 });
 ```
 
-No olvides que la ejecución de eventos del DOM sólo funciona cuando el contenedor del DOM es agregado al `document`. Puedes utilizar un ayudante como [`react-testing-library`](https://github.com/kentcdodds/react-testing-library) para reducir todo el código repetitivo.
+No olvides que la ejecución de eventos del DOM solo funciona cuando el contenedor del DOM es agregado al `document`. Puedes utilizar un ayudante como [`react-testing-library`](https://github.com/kentcdodds/react-testing-library) para reducir todo el código repetitivo.
 
 * * *
 
@@ -139,7 +139,7 @@ Pasa un módulo de un componente a simular a este método para mejorarlo con mé
 
 > Nota:
 >
-> `mockComponent()` es una API heredada. En su lugar, recomendamos usar [renderizado superficial](/docs/test-utils.html#shallow-rendering) o [`jest.mock()`](https://facebook.github.io/jest/docs/en/tutorial-react-native.html#mock-native-modules-using-jestmock).
+> `mockComponent()` es una API heredada. En su lugar, recomendamos usar [renderizado superficial](/docs/shallow-renderer.html) o [`jest.mock()`](https://facebook.github.io/jest/docs/en/tutorial-react-native.html#mock-native-modules-using-jestmock).
 
 * * *
 
@@ -208,7 +208,7 @@ findAllInRenderedTree(
 )
 ```
 
-Navega por todos los componentes en `tree` y acumula todos los componentes en donde `test(component)` sea `true`. Esto no es útil por sí solo, pero es utilizado como primitivo para otras utilidades de prueba.
+Navega por todos los componentes en `tree` y acumula todos los componentes en donde `test(component)` sea `true`. Esto no es útil por sí solo, pero es utilizado como primitiva para otras utilidades de prueba.
 
 * * *
 
@@ -234,7 +234,7 @@ findRenderedDOMComponentWithClass(
 )
 ```
 
-Igual a [`scryRenderedDOMComponentsWithClass()`](#scryrendereddomcomponentswithclass) pero espera que sólo haya un resultado, y retorna ese único resultado, de lo contrario lanza una excepción si hay algún otro número de coincidencias diferentes a una.
+Igual a [`scryRenderedDOMComponentsWithClass()`](#scryrendereddomcomponentswithclass) pero espera que solo haya un resultado, y retorna ese único resultado, de lo contrario lanza una excepción si hay algún otro número de coincidencias diferentes a una.
 
 * * *
 
@@ -260,7 +260,7 @@ findRenderedDOMComponentWithTag(
 )
 ```
 
-Igual a [`scryRenderedDOMComponentsWithTag()`](#scryrendereddomcomponentswithtag) pero espera que sólo haya un resultado y retorna ese único resultado, de lo contario lanza una excepción si hay algún otro número de coincidencias diferentes a una.
+Igual a [`scryRenderedDOMComponentsWithTag()`](#scryrendereddomcomponentswithtag) pero espera que solo haya un resultado y retorna ese único resultado, de lo contario lanza una excepción si hay algún otro número de coincidencias diferentes a una.
 
 * * *
 
@@ -286,7 +286,7 @@ findRenderedComponentWithType(
 )
 ```
 
-Igual a [`scryRenderedComponentsWithType()`](#scryrenderedcomponentswithtype) pero espera que sólo haya un resultado y retorna ese único resultado, de lo contrario lanza una excepción si hay algún otro número de coincidencias diferentes a una.
+Igual a [`scryRenderedComponentsWithType()`](#scryrenderedcomponentswithtype) pero espera que solo haya un resultado y retorna ese único resultado, de lo contrario lanza una excepción si hay algún otro número de coincidencias diferentes a una.
 
 ***
 

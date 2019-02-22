@@ -4,7 +4,7 @@ title: Componentes no controlados
 permalink: docs/uncontrolled-components.html
 ---
 
-En la mayoría de los casos, te recomendamos usar [Componentes Controlados](/docs/forms.html) para implementar formularios. En un componente controlado, los datos del formulario son manejados por un componente React. La alternativa son los componentes no controlados, donde los datos del formulario son manejados por el propio DOM.
+En la mayoría de los casos, te recomendamos usar [Componentes controlados](/docs/forms.html) para implementar formularios. En un componente controlado, los datos del formulario son manejados por un componente React. La alternativa son los componentes no controlados, donde los datos del formulario son manejados por el propio DOM.
 
 Para escribir un componente no controlado, en lugar de escribir un controlador de eventos para cada actualización de estado, puedes [usar una referencia](/docs/refs-and-the-dom.html) para que obtengas los valores del formulario desde el DOM.
 
@@ -68,7 +68,7 @@ Del mismo modo, `<input type="checkbox">` e `<input type="radio">` admiten `defa
 
 ## La etiqueta de entrada de archivo {#the-file-input-tag}
 
-En HTML, un `<input type="file">` permite al usuario elegir uno o más archivos del almacenamiento en sus dispositivos para cargarlos a un servidor o manipularlos mediante JavaScript a través de la [API File](https://developer.mozilla.org/es/docs/Web/API/File/Using_files_from_web_applications).
+En HTML, un `<input type="file">` permite al usuario elegir uno o más archivos del almacenamiento en sus dispositivos para cargarlos a un servidor o manipularlos mediante JavaScript a través de la [API de archivos](https://developer.mozilla.org/es/docs/Web/API/File/Using_files_from_web_applications).
 
 ```html
 <input type="file" />
